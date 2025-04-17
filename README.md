@@ -3,19 +3,20 @@
 Un projet en langage C bare-metal pour interfacer un **capteur de température et d’humidité DHT11** avec un **ATmega2560 (Arduino Mega)** et envoyer les mesures via **UART**.
 
 ## Structure du projet
-dht11_ws/ ├── include/ # Fichiers d'en-tête (headers) 
-		  │ ├── dht11.h 
-	      │ ├── uart.h 
-		  │ └── gpio.h 
-          ├── drivers/ # Fichiers source pour les pilotes bas-niveau 
-          │ ├── dht11/dht11.c 
-	      │ ├── uart/uart.c
-		  │ └── gpio/gpio.c
-		  ├── main/ # Logique principale de l’application 
-          │ └── main.c 
-		  ├── build/ # Fichiers compilés (ignorés par Git) 
-		  ├── Makefile # Système de compilation 
-		  └── .gitignore
+dht11_ws/ ├── include/ # Fichiers d'en-tête (headers)</br>
+		  │ ├── dht11.h </br>
+	      │ ├── uart.h </br>
+		  │ └── gpio.h </br>
+          ├── drivers/ # Fichiers source pour les pilotes bas-niveau </br>
+          │ ├── dht11/dht11.c </br>
+	      │ ├── uart/uart.c</br>
+		  │ └── gpio/gpio.c</br>
+		  ├── main/ # Logique principale de l’application </br>
+          │ └── main.c </br>
+		  ├── build/ # Fichiers compilés (ignorés par Git) </br>
+		  ├── Makefile # Système de compilation </br>
+		  └── .gitignore</br>
+
 ## Fonctionnalités
 
 - Lecture de la température et de l’humidité à partir du capteur DHT11
