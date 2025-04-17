@@ -1,8 +1,4 @@
-//#define F_CPU 16000000UL
-//#include <avr/io.h>
-//#include <avr/interrupt.h>
 #include <util/delay.h>
-//#include <stdlib.h>
 #include "dht11.h"
 #include "gpio.h"
 
@@ -17,7 +13,7 @@ uint8_t dht_reception_bit(void){
 	_delay_us(30); //Attendre 30 microsecondes (us) // Si signal present apres 30us, lire 1 sinon lire 0
 	uint8_t bit = gpio_lire(DHT_PIN, DHT_INPUTPIN) ? 1 : 0; // Attendre que signal s'arrete
 	while(gpio_lire(DHT_PIN, DHT_INPUTPIN));
-return bit;
+	return bit;
 }
 
 // Lecture d'un octet
