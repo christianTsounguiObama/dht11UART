@@ -40,21 +40,32 @@ git clone https://github.com/christianTsounguiObama/dht11UART.git
 cd dht11UART/dht11_ws
 ```
 
-### 2. Cloner le dépôt
+### 2. Compiler le projet
 ```bash
 make
 ```
 
-### 3. Flasher le binaire
+### 3. Flasher le fichier binaire
 Assurez-vous que votre carte est connectée via USB et ajustez PORT dans le Makefile si nécessaire.
-``bash
+```bash
 make flash
 ```
 
+### 4. Lire les données sur le port série
+Utilisez un outil comme screen :
+```bash
+screen /dev/ttyUSB0 9600
+```
 
+## Licence
+Ce projet est open source et disponible sous la Licence MIT.
 
+### Contribuer
+Les contributions sont les bienvenues. Si vous trouvez des problèmes, n’hésitez pas à ouvrir une issue ou à proposer des améliorations.
 
-
+### Remerciements
+Ce projet fait partie de mon initiative pour te montrer comment construire des systèmes embarqués à partir de zéro au travers de projets 
+dont le niveau de difficulté augmente progressivement.
 
 
 
