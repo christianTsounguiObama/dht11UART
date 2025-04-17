@@ -59,14 +59,14 @@ screen /dev/ttyUSB0 9600
 ```
 
 ## Licence
-Ce projet est open source et disponible sous la Licence MIT.
+Ce projet est open source et disponible sous la Licence Apache2.0.
 
 ### Contribuer
 Les contributions sont les bienvenues. Si vous trouvez des problèmes, n’hésitez pas à ouvrir une issue ou à proposer des améliorations.
 
 ### Remerciements
 Ce projet fait partie de mon initiative pour te montrer comment construire des systèmes embarqués à partir de zéro au travers de projets 
-dont le niveau de difficulté augmente progressivement.
+dont le niveau de difficulté augmente progressivement. Happy Coding!
 
 
 
