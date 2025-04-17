@@ -38,18 +38,18 @@ dht11_ws/ ├── include/ # Fichiers d'en-tête (headers)
 ```bash
 git clone https://github.com/christianTsounguiObama/dht11UART.git
 cd dht11UART/dht11_ws
-'''
+```
 
 ### 2. Cloner le dépôt
 ```bash
 make
-'''
+```
 
 ### 3. Flasher le binaire
 Assurez-vous que votre carte est connectée via USB et ajustez PORT dans le Makefile si nécessaire.
 ``bash
 make flash
-'''
+```
 
 
 
