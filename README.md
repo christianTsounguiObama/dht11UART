@@ -1,6 +1,6 @@
-# Interface UART du DHT11 avec l’ATmega2560 (C Bare-Metal)
+# Lecture de capteur DHT11 et transmission UART en C bas-niveau sur ATmega2560
 
-Un projet en langage C bare-metal pour interfacer un **capteur de température et d’humidité DHT11** avec un **ATmega2560 (Arduino Mega)** et envoyer les mesures via **UART**.
+Ce projet implémente, en langage C bare-metal, une interface directe entre un microcontrôleur ATmega2560 (Arduino Mega) et un capteur de température et d’humidité DHT11, sans utiliser de bibliothèques externes. Les données mesurées sont ensuite transmises via le protocole UART à un terminal série ou un autre périphérique. L’objectif est de comprendre le protocole de communication 1-Wire spécifique au DHT11, de le mettre en œuvre via des manipulations de registres, et de configurer l’UART pour envoyer les données en ASCII.
 
 ## Structure du projet
 dht11_ws/ ├── include/ # Fichiers d'en-tête (headers)</br>
@@ -19,10 +19,11 @@ dht11_ws/ ├── include/ # Fichiers d'en-tête (headers)</br>
 
 ## Fonctionnalités
 
-- Lecture de la température et de l’humidité à partir du capteur DHT11
-- Transmission des données via UART (9600 bauds)
-- Code entièrement registres (sans bibliothèques Arduino)
-- Structure modulaire des pilotes
+- Lecture des données du capteur DHT11 via le protocole 1-Wire.
+- Traitement du signal (timing précis, gestion des bits de données).
+- Configuration et utilisation du module UART interne du microcontrôleur.
+- Transmission des mesures température/humidité vers un terminal série.
+- Codé sans bibliothèques Arduino, uniquement en accès registre.
 
 ## Prérequis
 
